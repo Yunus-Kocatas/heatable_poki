@@ -1,0 +1,87 @@
+name: heatable_poki
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_cache_manager: ^3.3.0
+  palette_generator: ^0.3.2
+  hive_flutter: ^1.1.0
+  hive: ^2.0.5
+  progress_dialog: ^1.2.4
+  getwidget: ^2.0.4
+  animations: ^2.0.2
+  responsive_grid_list: ^1.2.2
+  cached_network_image: ^3.2.0
+  lazy_load_scrollview: ^1.1.0
+  dio: ^4.0.4
+  http_interceptor: ^1.0.2
+  flutter_bloc: ^7.0.0
+  get: ^4.6.1
+  flutter_staggered_grid_view: ^0.6.0
+  provider: ^6.0.1
+  dotted_border: ^2.0.0-nullsafety.0
+  path_provider: ^2.0.1
+
+  shared_preferences: ^2.0.12
+  skeleton_loader: ^2.0.0+4
+  day_night_switcher: ^0.2.0+1
+
+
+dev_dependencies:
+
+  flutter_driver:
+    sdk: flutter
+
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^1.1.2
+  build_runner: ^2.1.7
+
+
+
+msix_config:
+  display_name: Flutter Folio
+  publisher_display_name: gskinner, inc
+  identity_name: 56347gskinner-xboxapps.FlutterFolio
+  msix_version: 1.1.0.0
+  start_menu_icon_path: ./source-assets/app-flutter-folio.png
+  tile_icon_path: ./source-assets/app-flutter-folio.png
+  publisher: CN=8BC7C029-E8A6-4A58-BB90-CCCBD93A99FD
+flutter_icons:
+  android: true
+  ios: true
+  image_path: source-assets/app-flutter-folio.png
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: ic_font
+      fonts:
+        - asset: assets/fonts/ic_font.ttf
